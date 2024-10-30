@@ -19,7 +19,7 @@ int main(void) {
         printk("Failed to configure LED pin\n");
         return;
     }
-
+//GOOD
  
     printf("Hello World! %s\n", CONFIG_BOARD_TARGET);
 

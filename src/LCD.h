@@ -15,18 +15,16 @@ struct i2c_dt_spec;
 #define LCD_CMD 0x00
 #define LCD_CHR 0x01
 #define LCD_ENABLE 0b00000100
-#define LCD_LINE_1 0x80 // Select line 1
-#define LCD_LINE_2 0xC0 // Select line 2
-#define LCD_WIDTH 16    // Max number of characters per line
+#define LCD_LINE_1 0x80 
+#define LCD_LINE_2 0xc0 
+#define LCD_WIDTH 16 
 
-#define HELLO_MSG "Hello!"
+#define HELLO_MSG "Hello !"
 #define ZEPHYR_MSG "Zephyr is cool"
-
 #define START_ALERT_MONITORING_MSG_1 "Alarm"
 #define START_ALERT_MONITORING_MSG_2 "Protection"
-
 #define INTRUDER_MSG_1 "INTRUDER"
-#define INTRUDER_MSG_2 "LEAVE!"
+#define INTRUDER_MSG_2 "LEAVE !"
 
 void init_lcd(const struct i2c_dt_spec *dev_lcd_screen);
 void write_lcd(const struct i2c_dt_spec *dev_lcd_screen, const char *msg, uint8_t line);

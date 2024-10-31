@@ -9,3 +9,6 @@ target_sources(app PRIVATE
     src/main.c
     src/LCD.c
 )
+
+
+
